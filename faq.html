@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STeam Consulting</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="/index.html" class="logo"><img src="images/STeam Consulting.png" alt="" width="170" height="50"></a>
+
+        <div class='bx bx-menu' id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="/index.html" class="active">Home</a>
+            <a href="/index.html">Sobre nós</a>
+            <a href="/index.html">As nossas Soluções</a>
+            <a href="/index.html">Clientes</a>
+            <a href="/index.html">Contactos</a>
+        </nav>
+    </header>
+    <div class="faq-container">
+        <div class="faq-column">
+            <h2 class="title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-column">
+            <div class="faq-question" onclick="toggleAnswer(1)">Vi as oportunidades de emprego disponíveis, mas não encontrei nenhuma na minha área de especialização. Como procedo?<span class="toggle-indicator">+</span></div>
+            <div class="faq-answer" data-index="1">Podes submeter uma candidatura espontânea. Além disso, as nossas ofertas de emprego são atualizadas regularmente, pelo que, em qualquer momento, pode surgir uma vaga do teu interesse. Se quiseres acompanhar mais de perto as novidades, liga-te a nós nas nossas redes sociais (link para as redes)!</div>
+            <div class="faq-question" onclick="toggleAnswer(2)">Submeti a minha candidatura. E agora?<span class="toggle-indicator">+</span></div>
+            <div class="faq-answer" data-index="2">Agora, a nossa equipa de recrutamento irá proceder à análise da mesma. Entretanto, poderás ser contactado para uma entrevista. Fica atento/a ao e-mail e ao telemóvel!</div>
+            <div class="faq-question" onclick="toggleAnswer(3)">Posso candidatar-me a mais do que uma oportunidade de emprego?<span class="toggle-indicator">+</span></div>
+            <div class="faq-answer" data-index="3">Sim! Escolhe as vagas que se alinham com os teus interesses e habilidades. Serás avaliado/a em relação aos diferentes requisitos e poderás ser entrevistado/a para diferentes funções.</div>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

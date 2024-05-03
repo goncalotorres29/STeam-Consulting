@@ -94,8 +94,7 @@ section {
 }
 
 .home-img img {
-    width: 35vw;
-    animation: floatImage 4s ease-in-out infinite;
+    width: 30vw;
 }
 
 @keyframes floatImage {
@@ -190,6 +189,9 @@ span {
     font-size: 4.5rem;
 }
 
+.title {
+    font-size: 3.5rem;
+}
 .subtitle {
     text-align: center;
     font-size: 2.5rem;
@@ -513,6 +515,58 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
+}
+
+.faq-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    max-width: 900px;
+    margin-top: 15%;
+}
+
+.faq-column {
+    width: 30%;
+}
+
+.faq-column:last-child {
+    width: 70%; 
+}
+
+.faq-column h2 {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    cursor: pointer;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    position: relative;
+}
+
+.faq-question::after {
+    content: '\f107';
+    font-family: 'boxicons';
+    position: absolute;
+    right: 0;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    display: none;
+    margin-bottom: 20px;
+    font-style: italic;
+    margin-bottom: 80px;
+    font-size: 14px;
+}
+
+.faq-question.closed .toggle-indicator {
+    transform: rotate(45deg);
+}
+
+.toggle-indicator {
+    float: right;
 }
 
 @media (max-width: 365px) {

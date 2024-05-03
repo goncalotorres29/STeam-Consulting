@@ -59,3 +59,11 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+
+function toggleAnswer(index) {
+    var answer = document.querySelector('.faq-answer[data-index="' + index + '"]');
+    answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+    var question = document.querySelector('.faq-question[data-index="' + index + '"]');
+    question.classList.toggle('open');
+}
